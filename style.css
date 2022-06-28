@@ -1,0 +1,241 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+
+body {
+    background: #555;
+}
+/**==================== full form ================*/
+.form {
+    width: 25%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 10px;
+    background: #1515D4;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .5), -5px -5px 5px rgba(0, 0, 0, .5);
+}
+
+.form:hover {
+    box-shadow: none;
+}
+
+/**==================== headings ================*/
+
+.form .title {
+    width: 100%;
+    height: 15%;
+}
+
+.form .title h2 {
+    display: inline-flex;
+    float: left;
+    width: 50%;
+    height: 100%;
+    border: 10px solid #1515D4;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: blue;
+    border-radius: 20px;
+}
+
+.form .title h2:first-child {
+    background: none;
+}
+/**==================== reg/log ================*/
+
+.form .reg, .form .log {
+    display: block;
+    width: 100%;
+    height: 85%;
+    padding: 50px 20px;
+}
+
+.form .reg *, .form .log * {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    display: flex;
+    width: 100%;
+    height: 15%;
+    margin-top: 13px;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 5px;
+    background:rgba(255, 255, 255, 0.85);
+}
+
+.form .reg a, .form .log a {
+    width: 70%;
+    margin: 30px auto;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    font-family: Cambria, sans-serif;
+    font-size: 20px;
+    background: rgba(119, 15, 255, .75);
+    color: white;
+    cursor: pointer;
+}
+
+.form .reg a:hover, .form .log a:hover {
+    transform: scale(1.05);
+}
+
+.form .reg a:active, .form .log a:active {
+    transform: scale(1);
+}
+
+/* ========================================================================= */
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body {
+    background: #555;
+}
+
+
+
+.full {
+    color: white;
+    width: 50%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.full h2 {
+    text-align: center;
+    background: rgba(0, 0, 255, 0.75);
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    word-break: keep-all;
+}
+
+.full .sl {
+    background: rgba(39, 1, 255, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full .sl .select {
+    background: black;
+    width: 35%;
+    height: 50px;
+    margin: 30px 10px 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.full .sl .select:last-child {
+    margin-left: 10px;
+}
+
+.full .sl .check {
+    background: black;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.full .sl .check:hover, .full .sl .select:hover {
+    border: 1px solid lime;
+}
+
+.full .sl .check:active {
+    transform: scale(0.9);
+    background: aqua;
+    border: 1px solid black;
+}
+
+/*========================== Result Part ====================*/
+
+
+.result table {
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    border-radius: 0 0 10px 10px;
+    border-collapse: collapse;
+    background: rgba(0, 0, 255, 0.75);
+}
+
+
+/**==================== responsive ================*/
+
+@media screen and (min-width: 250px) {
+    .form, .full {
+        width: 95%;
+    }
+}
+
+
+@media screen and (min-width: 450px) {
+    .form, .full {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .form, .full {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .form, .full {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .form, .full {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .form, .full {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .form, .full {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .form, .full {
+        width: 25%;
+    }
+}

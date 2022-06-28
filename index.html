@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Temporary Luck Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form" style="display: block;">
+        <div class="title">
+            <h2 onclick="reg()">Register</h2>
+            <h2 onclick="log()">Login</h2>
+        </div>
+        <div class="reg" style="display: none;">
+            <input type="text" placeholder="Type your name" id="reg-name">
+            <input type="text" placeholder="Type your number" id="reg-number">
+            <input type="password" placeholder="Choose a password" id="reg-pass">
+            <input type="password" placeholder="Re-type the password" id="reg-re-pass">
+            <a id="reg-button">Register</a>
+        </div>
+        <div class="log">
+            <input type="text" placeholder="Type Number 12345678900" id="log-number" value="12345678900">
+            <input type="password" placeholder="Type Password 123456" id="log-pass" value="123456">
+            <a id="log-button">Login as a Guest</a>
+        </div>
+    </div>
+
+    <!------------------------------------------------------------------------>
+
+
+    <div class="full" style="display: none;">
+        <h2 id="guestname"> Guest000,<br> Test your luck.</h2>
+        <div class="sl">   
+            <div class="select" id="head">Head</div>
+            <div class="select" id="tail">Tail</div>
+        </div>
+        <div class="sl"> 
+            <div class="check" id="test">Test</div>
+        </div>
+        <div class="result">
+            <table>
+                <tr>
+                    <td>Played</td>
+                    <td>Win</td>
+                    <td>Lose</td>
+                    <td>Score</td>
+                </tr>
+                <tr>
+                    <td id="played">0</td>
+                    <td id="win">0</td>
+                    <td id="lose">0</td>
+                    <td id="score">0</td>
+                </tr>
+                
+            </table>
+        </div>    
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
